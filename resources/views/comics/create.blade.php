@@ -13,7 +13,7 @@
 
             <div class="mb-3">
                 <label for="thumb" class="form-label">Immagine</label>
-                <input type="text" class="form-control" id="image" name="image">
+                <input type="text" class="form-control" id="thumb" name="thumb">
             </div>
 
             <div class="mb-3">
@@ -23,22 +23,22 @@
 
             <div class="mb-3">
                 <label for="price" class="form-label">Prezzo</label>
-                <input type="text" class="form-control" id="weight" name="weight">
+                <input type="text" class="form-control" id="price" name="price">
             </div>
 
             <div class="mb-3">
                 <label for="series" class="form-label">Serie</label>
-                <input type="text" class="form-control" id="cooking_time" name="cooking_time">
+                <input type="text" class="form-control" id="series" name="series">
             </div>
 
             <div class="mb-3">
                 <label for="type" class="form-label">Tipo</label>
-                <input type="text" class="form-control" id="cooking_time" name="cooking_time">
+                <input type="text" class="form-control" id="type" name="type">
             </div>
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Data di vendita</label>
-                <input type="text" class="form-control" id="cooking_time" name="cooking_time">
+                <input type="text" class="form-control" id="sale_date" name="sale_date">
             </div>
 
             <button type="submit" class="btn btn-primary">Invia</button>
