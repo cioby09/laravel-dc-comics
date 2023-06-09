@@ -4,11 +4,23 @@
     <div class="container">
         <div class="my-2 d-flex justify-content-between align-items-center">
             <h2>Inserisci nuovo fumetto</h2>
-            <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
-                href="/" aria-current="page">
-                Home
+            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="/comics">
+                Comics
             </a>
         </div>
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>
+                            {{ $error }}
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf

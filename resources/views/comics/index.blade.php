@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="my-2 d-flex justify-content-between align-items-center">
-            <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
                 href="/" aria-current="page">
                 Home
             </a>
