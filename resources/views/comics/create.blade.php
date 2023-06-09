@@ -2,7 +2,13 @@
 
 @section('content')
     <div class="container">
-        <h2>Inserisci nuovo fumetto</h2>
+        <div class="my-2 d-flex justify-content-between align-items-center">
+            <h2>Inserisci nuovo fumetto</h2>
+            <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="/" aria-current="page">
+                Home
+            </a>
+        </div>
 
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf
@@ -41,7 +47,7 @@
                 <input type="text" class="form-control" id="sale_date" name="sale_date">
             </div>
 
-            <button type="submit" class="btn btn-primary">Invia</button>
+            <button type="submit" href="/comics" class="btn btn-success">Invia</button>
 
         </form>
     </div>

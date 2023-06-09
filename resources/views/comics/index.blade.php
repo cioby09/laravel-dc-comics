@@ -2,7 +2,11 @@
 
 @section('content')
     <div class="container">
-        <div class="mt-2 d-flex justify-content-between align-items-center">
+        <div class="my-2 d-flex justify-content-between align-items-center">
+            <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="/" aria-current="page">
+                Home
+            </a>
             <h2>Fumetti</h2>
             <a class="btn btn-success" href="{{ route('comics.create') }}" role="button">Inserisci nuovo fumetto</a>
         </div>
@@ -24,6 +28,14 @@
                             <a class="btn btn-info" href="{{ route('comics.show', $comic->id) }}">
                                 Info
                             </a>
+                            <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}">Modifica</a>
+                            <form class="d-inline-block" action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-danger">
+                                    Elimina
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 @endforeach

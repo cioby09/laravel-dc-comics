@@ -2,7 +2,13 @@
 
 @section('content')
     <div class="container d-flex flex-column justify-content-center">
-        <h2 class="text-center">Info fumetto: {{ $comic->title }}</h2>
+        <div class="my-2 d-flex justify-content-between align-items-center">
+            <h2 class="text-center">Info fumetto: {{ $comic->title }}</h2>
+            <a class="link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+                href="/comics">
+                Comics
+            </a>
+        </div>
         <div class="d-flex align-items-center justify-content-center row">
             <img class="col-6 p-5" src="{{ $comic->thumb }}" alt="">
             <ul class="list-group p-5 col-6">

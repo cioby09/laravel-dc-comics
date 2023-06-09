@@ -1,6 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 body {
+    background-color: #0476F2;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -8,4 +9,8 @@ body {
 
 .home-links {
     font-size: 5rem;
+}
+
+.container .table {
+    background-color: #FFFFFF;
 }
