@@ -1,1 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-links {
+    font-size: 5rem;
+}

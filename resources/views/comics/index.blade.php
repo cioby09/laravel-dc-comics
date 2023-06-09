@@ -2,7 +2,10 @@
 
 @section('content')
     <div class="container">
-        <h2>Fumetti</h2>
+        <div class="mt-2 d-flex justify-content-between align-items-center">
+            <h2>Fumetti</h2>
+            <a class="btn btn-success" href="{{ route('comics.create') }}" role="button">Inserisci nuovo fumetto</a>
+        </div>
         <table class="table">
             <thead>
                 <tr>
@@ -18,7 +21,7 @@
                         <td>{{ $comic->title }}</td>
                         <td>{{ $comic->series }}</td>
                         <td>
-                            <a class="btn btn-success" href="{{ route('comics.show', $comic->id) }}">
+                            <a class="btn btn-info" href="{{ route('comics.show', $comic->id) }}">
                                 Info
                             </a>
                         </td>
