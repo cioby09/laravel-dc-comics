@@ -50,7 +50,7 @@
                 <input type="text" class="form-control" id="sale_date" name="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
-            <button type="submit" class="btn btn-">Invia</button>
+            <button type="submit" class="btn btn-warning">Invia</button>
         </form>
     </div>
 @endsection
